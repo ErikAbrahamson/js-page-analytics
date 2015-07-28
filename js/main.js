@@ -9,7 +9,7 @@ $(window).scroll(function() {
   var $documentHeight = $(document).height();
   var $windowHeight = $(window).height();
 
-  $('#analytics').text((($windowHeight / $documentHeight) * 100).toFixed(0) + '%');
+  $('#analytics').text(($windowTop /($windowHeight - $documentHeight) * -100).toFixed(0) + '%');
 });
 
 
