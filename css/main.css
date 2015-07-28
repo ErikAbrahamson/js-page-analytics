@@ -8,9 +8,17 @@ footer {
   margin: 50px 0;
 }
 
-#analytics {
+#analytics-percent {
   position: fixed;
   top: 50px;
   left: 0;
+  width: 60px;
   z-index: 1;
+}
+#analytics-time {
+  position: fixed;
+  top: 85px;
+  left: 0;
+  width: 60px;
+  z-index:1 ;
 }

@@ -1,18 +1,21 @@
 // add scripts
-
+var $startTime = null;
 $(document).on('ready', function() {
+  $startTime = $.now();
   console.log('sanity check!');
 });
-
+// Percentage scrolled
 $(window).scroll(function() {
   var $windowTop = $(window).scrollTop();
   var $documentHeight = $(document).height();
   var $windowHeight = $(window).height();
 
-  $('#analytics').text(($windowTop /($windowHeight - $documentHeight) * -100).toFixed(0) + '%');
+  $('#analytics-percent').text(($windowTop /($windowHeight - $documentHeight) * -100).toFixed(0) + '%');
 });
+// Time difference, button clicked
 
-
-// document window / percent over window
-
-// grab time stamp on window load. subtract time button clicked from initial time
+$('#signup').on('click', function() {
+  var $clickTime = $.now();
+  var $duration = (($clickTime - $startTime) / 1000).toFixed(0);
+  $('#analytics-time').text($duration + 's');
+});
