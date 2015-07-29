@@ -17,6 +17,11 @@ $(window).scroll(function() {
 $('#signup').on('click', function() {
   var $clickTime = $.now();
   var $duration = (($clickTime - $startTime) / 1000).toFixed(0);
+    if ($duration <= 60) {
+      $('#analytics-duration').html($duration + 's');
+    } else {
+      $('#analytics-duration').html(($duration / 60).toFixed(0) + 'm');
+    }
   $('#analytics-time').text($duration + 's');
 });
 
@@ -24,7 +29,11 @@ $('#signup').on('click', function() {
 $('#analytics-duration').on('click', function() {
   var $clickTime = $.now();
   var $duration = (($clickTime - $startTime) / 1000).toFixed(0);
-  for (var counter = 0; counter < 100000; counter += $duration) {
-    $('#analytics-duration').html($duration + 's');
-  }
+  setInterval(function() {
+    if ($duration <= 60) {
+      $('#analytics-duration').html(++$duration + 's');
+    } else {
+      $('#analytics-duration').html((++$duration / 60).toFixed(0) + 'm');
+    }
+  }, 1000);
 });
