@@ -59,10 +59,12 @@
 
   <!-- Page Content -->
   <div class="container">
-    <button class="btn btn-success" id="analytics-percent">0%</button>
-    <button class="btn btn-info" id="analytics-time">0s</button>
-    <button class="stopwatch btn btn-primary" id="analytics-duration">
-      <img class="img" src="img/stopwatch.png"></button>
+    <div class="analytics-text">page analytics</div>
+    <button class="analytics btn btn-success" id="analytics-percent">0%</button>
+    <button class="analytics btn btn-info" id="analytics-time">0s</button>
+    <button class="analytics stopwatch btn btn-primary" id="analytics-duration">?s</button>
+    <button class="analytics btn btn-warning" id="analytics-modal">>></button>
+    <div id="modal" class="hide-modal"></div>
 
     <div class="row">
 
@@ -215,7 +217,7 @@
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="refactor-main.js"></script>
 
 </body>
 

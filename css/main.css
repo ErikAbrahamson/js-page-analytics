@@ -3,42 +3,57 @@
 body {
   padding-top: 70px;
 }
-
 footer {
   margin: 50px 0;
 }
-
-#analytics-percent {
+.hide-modal {
+  display: none;
+}
+.analytics {
+  opacity: 0.825;
   position: fixed;
-  top: 50px;
+  border-radius: 0 12px 12px 0;
   left: 0;
   width: 60px;
-  z-index: 1;
+  z-index: 5;
+}
+.analytics-text {
+  font-style: italics;
+  border-radius: 0 0 12px 0;
+  position: fixed;
+  left: 0;
+  width: 60px;
+  top: 50px;
+  height: 10px;
+  font-size: 8px;
+  background-color: gold;
+  z-index: 6;
+}
+#analytics-percent {
+  top: 60px;
 }
 #analytics-time {
-  position: fixed;
-  top: 85px;
-  left: 0;
-  width: 60px;
-  z-index: 1;
+  top: 95px;
 }
 .stopwatch {
+  top: 130px;
+}
+#analytics-modal {
+  top: 165px;
+}
+.show-modal {
+  display: block;
+  border-radius: 0 12px 12px 0;
   position: fixed;
+  opacity: 0.95;
   left: 0;
-  top: 120px;
-  width: 60px;
-  z-index: 1;
+  top: 165px;
+  height: 200px;
+  width: 250px;
+  z-index: 6;
+  background-color: #f0ad4e;
 }
 .img {
   width: 20px;
   height: 20px;
-}
-#box {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  z-index: 5000;
-  top: 0;
-  left: 0;
 }
