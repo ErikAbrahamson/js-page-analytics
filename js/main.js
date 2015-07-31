@@ -35,7 +35,7 @@ $(document).on('ready', function() {
   });
 
   // Time spent on site
-  $('#analytics-duration').on('click', function() {
+  $('#analytics-duration').one('click', function() {
     // time the button is clicked
     var $clickTime = $.now();
     // subtract button click time from subtract time
