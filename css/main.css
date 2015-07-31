@@ -33,3 +33,12 @@ footer {
   width: 20px;
   height: 20px;
 }
+#box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+}
