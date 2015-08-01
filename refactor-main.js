@@ -23,4 +23,8 @@ $(document).on('ready', function() {
     $('#modal').toggleClass('show-modal');
     modalBtn.css('z-index','9');
   });
+  clickBtn.css({
+    'transition' : 'all .2s ease-in-out',
+    'opacity' : '1'
+    });
 });

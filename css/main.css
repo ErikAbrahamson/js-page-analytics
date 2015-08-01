@@ -6,7 +6,7 @@ body {
 footer {
   margin: 50px 0;
 }
-.hide-modal {
+.hide {
   display: none;
 }
 .analytics {
@@ -35,14 +35,16 @@ footer {
 #analytics-time {
   top: 95px;
 }
-.stopwatch {
-  top: 130px;
-}
 #analytics-modal {
   top: 165px;
 }
+.stopwatch {
+  top: 130px;
+}
+.heatmap {
+  top: 165px;
+}
 .show-modal {
-  display: block;
   border-radius: 0 12px 12px 0;
   position: fixed;
   opacity: 0.95;
